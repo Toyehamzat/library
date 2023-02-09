@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlye.css" />
+    <script src="script.js" defer>         </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+    <title>library</title>
+</head>
+<body>
+    <nav>
+        <p>lIBRARY</p>
+    </nav>
+    <main>
+        <div class="container">
+            <button id="add-book" class="add-book">ADD BOOK</button>
+            <div class="form-container" id="form-container">
+                <form action="" id="book-form" class="book-form">
+                    <h3>A New Book</h3>
+                    <input type="text" id="title" class="title" placeholder="enter title" name="title"  maxlength="50" required />
+                    <input type="text " id="author"class="author" placeholder="enter author's name" name="author"  maxlength="50" required />
+                    <input type="number" id="pages" class="pages" placeholder="pages" name="pages"  max="10000" required />
+                    <div class="read-book">
+                        <label for="read">Have you read this book?</label>
+                        <input type="checkbox" class="read" id="read" name="read" />
+                    </div>
+                    <button type="submit" id="new-book" class="new-book">Add book</button>
+                </form>
+            </div>
+            <div class="library" id="library"></div>
+        </div>
+    </main>
+    <footer>by Anibi Adetoye Hamzat</footer>
+</body>
+</html>
