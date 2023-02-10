@@ -1,0 +1,110 @@
+:root {
+    --white: #fffbfb;
+    --grey: #f0eef1;
+    --black: #050505;
+    --red: #ff7070;
+    --light-green: #9fff9c;
+    --light-red: #ff9c9c;
+    --border-radius: 8px;
+    --container-width: 1200px;
+    --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'roboto', sans-serif;
+}
+body,html{
+    background-color: var(--grey);
+}
+nav{
+    background-color: var(--white);
+    padding: 20px 50px;
+    box-shadow: var(--shadow);
+}
+nav h1 {
+    font-size: 35px;
+    color: var(--black);
+    font-weight: 600;
+}
+main{
+    padding:  55px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.add-book{
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 1s all ease;
+    margin-bottom: 10px;
+}
+.add-book:hover {
+    background-color:#e2e2e2;
+}
+.form-container{
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    display: none;
+    transform: translateY(-50%);
+    padding-top: 20px;
+}
+.book-form{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    gap: 25px;
+    padding: 20px;
+    text-align: center;
+    background-color:var(--grey);
+    border: none;
+    border-radius: 15px;   
+    box-shadow: var(--shadow); 
+    position: relative;
+}
+.book-form h3{
+    font-size: 1.3rem;
+    color: var(--black);
+}
+.book-form input{
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-shadow: var(--shadow);
+}
+.read-book{
+    font-size: 1.2rem;
+}
+.new-book{
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #9fff9c;
+    transition: 1s all ease;
+}
+.new-book:hover {
+    filter: brightness(90%);
+}
+.library{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+}
