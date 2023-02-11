@@ -24,7 +24,10 @@ nav{
     background-color: var(--white);
     padding: 20px 50px;
     box-shadow: var(--shadow);
+
+   
 }
+
 nav h1 {
     font-size: 35px;
     color: var(--black);
@@ -32,8 +35,10 @@ nav h1 {
 }
 main{
     padding:  55px;
+    height: 80vh;
 }
 .container{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,21 +53,25 @@ main{
     border: none;
     outline: none;
     background-color: transparent;
-    transition: 1s all ease;
+    transition: 1s all ease-out;
     margin-bottom: 10px;
+    height: 60px;
 }
 .add-book:hover {
     background-color:#e2e2e2;
 }
 .form-container{
+    height: 450px;
     position: fixed;
     z-index: 1;
-    top: 50%;
+    top: 55%;
     display: none;
     transform: translateY(-50%);
     padding-top: 20px;
+    transition: 3s all ease-out;
 }
 .book-form{
+    height: 100%;
     display: flex;
     flex-direction: column;
     width: 330px;
@@ -80,6 +89,7 @@ main{
     color: var(--black);
 }
 .book-form input{
+    text-align: left;
     font-size: 20px;
     border-radius: 5px;
     border: none;
@@ -107,4 +117,58 @@ main{
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 30px;
+}
+.book {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	justify-content: center;
+	gap: 20px;
+	border: none;
+	border-radius: 15px;
+	background-color: var(--white);
+	box-shadow:var(--shadow);
+	width: 350px;
+	padding: 20px;
+}
+.title {
+	text-align: center;
+	font-size: 1.5rem;
+    height: 40px;
+    border-radius: 10px;
+}
+.author {
+	text-align: center;
+	font-size: 1.5rem;
+    height: 40px;
+}
+.pages {
+	text-align: center;
+	font-size: 1.5rem;
+    height: 40px;
+}
+.read {
+    font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+    transition: 0.3s ease-in-out;
+    /* height: 50px; */
+}
+.remove {
+    font-size: 18px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+    height: 50px;
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgb(235, 235, 235);
+    font-size: 18px;
+    font-weight: 600;
 }
